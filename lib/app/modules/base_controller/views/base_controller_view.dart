@@ -1,4 +1,6 @@
 import 'package:e_commerce/app/modules/profile/views/profile_view.dart';
+import 'package:e_commerce/app/modules/store/views/store_view.dart';
+import 'package:e_commerce/app/modules/wishlist/views/wishlist_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -34,6 +36,8 @@ class BaseControllerView extends GetView<BaseControllerController> {
                               physics: const NeverScrollableScrollPhysics(),
                               children: [
                                 HomeView(),
+                                StoreView(),
+                                WishlistView(),
                                 ProfileView(),
                                 // RoomsView(),
                                 // AddroomView(),
