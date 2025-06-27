@@ -1,11 +1,11 @@
-import 'package:e_commerce/app/profile/bindings/profile_binding.dart';
-import 'package:e_commerce/app/profile/views/profile_view.dart';
+import 'package:e_commerce/app/modules/profile/views/profile_view.dart';
 import 'package:get/get.dart';
 
-import '../base_controller/bindings/base_controller_bindings.dart';
-import '../base_controller/views/base_controller_view.dart';
-import '../home/bindings/home_binding.dart';
-import '../home/views/home_view.dart';
+import '../modules/base_controller/bindings/base_controller_bindings.dart';
+import '../modules/base_controller/views/base_controller_view.dart';
+import '../modules/home/bindings/home_binding.dart';
+import '../modules/home/views/home_view.dart';
+import '../modules/profile/bindings/profile_binding.dart';
 
 part 'app_routes.dart';
 

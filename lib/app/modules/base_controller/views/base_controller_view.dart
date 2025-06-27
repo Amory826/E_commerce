@@ -1,9 +1,9 @@
-import 'package:e_commerce/app/profile/views/profile_view.dart';
+import 'package:e_commerce/app/modules/profile/views/profile_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 
-import '../../extension/appbar/bottom_bar.dart';
+import '../../../extension/appbar/bottom_bar.dart';
 import '../../home/views/home_view.dart';
 import '../controllers/base_controller_controller.dart';
 

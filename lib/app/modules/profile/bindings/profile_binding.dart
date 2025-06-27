@@ -1,4 +1,4 @@
-import 'package:e_commerce/app/profile/controllers/profile_controller.dart';
+import 'package:e_commerce/app/modules/profile/controllers/profile_controller.dart';
 import 'package:get/get.dart';
 
 import '../../home/bindings/home_binding.dart';

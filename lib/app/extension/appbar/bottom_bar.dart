@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 
-import '../../base_controller/controllers/base_controller_controller.dart';
+import '../../modules/base_controller/controllers/base_controller_controller.dart';
 
 class CustomeBottomBar extends StatelessWidget {
   final BaseControllerController controller;

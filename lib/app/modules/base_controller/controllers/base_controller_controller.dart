@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../extension/constant.dart';
+import '../../../extension/constant.dart';
 
 class BaseControllerController extends GetxController {
   var bottomController = PageController().obs;

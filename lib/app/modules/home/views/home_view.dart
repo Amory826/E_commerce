@@ -4,9 +4,9 @@ import 'package:e_commerce/utils/widgets/Circle.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import '../../../utils/widgets/CustomClipper.dart';
-import '../../../utils/widgets/product_items.dart';
-import '../../models/Product.dart';
+import '../../../../utils/widgets/CustomClipper.dart';
+import '../../../../utils/widgets/product_items.dart';
+import '../../../models/Product.dart';
 import '../controllers/home_controller.dart';
 
 class HomeView extends GetView<HomeController> {

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import 'app/home/views/home_view.dart';
+import 'app/modules/home/views/home_view.dart';
 import 'app/routes/app_pages.dart';
 
 Future<void> main() async {
