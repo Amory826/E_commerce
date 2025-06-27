@@ -1,3 +1,5 @@
+import 'package:e_commerce/app/profile/bindings/profile_binding.dart';
+import 'package:e_commerce/app/profile/views/profile_view.dart';
 import 'package:get/get.dart';
 
 import '../base_controller/bindings/base_controller_bindings.dart';
@@ -15,9 +17,14 @@ class AppPages {
   static final routes = [
     GetPage(
       name: _Paths.BASE,
-      page: () => const BaseControllerView(),
+      page: () => BaseControllerView(),
       binding: BaseControllerBinding(),
     ),
     GetPage(name: _Paths.HOME, page: () => HomeView(), binding: HomeBinding()),
+    GetPage(
+      name: _Paths.PROFILE,
+      page: () => ProfileView(),
+      binding: ProfileBinding(),
+    ),
   ];
 }

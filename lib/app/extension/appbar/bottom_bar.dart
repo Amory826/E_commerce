@@ -23,10 +23,10 @@ class CustomeBottomBar extends StatelessWidget {
           animationDuration: const Duration(milliseconds: 0),
           backgroundColor: Colors.blue,
           items: const <Widget>[
-            Icon(Icons.home, size: 20),
-            Icon(Icons.store, size: 20),
-            Icon(Icons.favorite_border, size: 20),
-            Icon(Icons.account_circle_outlined, size: 20),
+            Icon(Icons.home, size: 24),
+            Icon(Icons.storefront_outlined, size: 24),
+            Icon(Icons.favorite_border, size: 24),
+            Icon(Icons.account_circle_outlined, size: 24),
           ],
           onTap: (index) {
             controller.navigateToPage(index);
