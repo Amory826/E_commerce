@@ -1,4 +1,5 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
+import 'package:e_commerce/utils/UColors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -21,7 +22,7 @@ class CustomeBottomBar extends StatelessWidget {
           height: 50,
           index: controller.currentIndexBar.value,
           animationDuration: const Duration(milliseconds: 0),
-          backgroundColor: Colors.blue,
+          backgroundColor: UColors.primary,
           items: const <Widget>[
             Icon(Icons.home, size: 24),
             Icon(Icons.storefront_outlined, size: 24),

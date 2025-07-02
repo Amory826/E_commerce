@@ -81,6 +81,7 @@ flutter:
     - assets/icons/payment_methods/
     - assets/banners/
     - assets/products/
+    - assets/brands/
 
 
   #--------[FONTS]------------

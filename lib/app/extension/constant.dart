@@ -1,3 +1,3 @@
 import 'package:flutter/material.dart';
 
-var pages = <String>['/home', '/rooms', '/schedule', '/profile'];
+var pages = <String>['/home', '/store', '/wishlist', '/profile'];

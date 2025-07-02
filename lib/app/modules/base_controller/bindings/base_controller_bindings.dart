@@ -7,6 +7,5 @@ class BaseControllerBinding extends Bindings {
   @override
   void dependencies() {
     Get.lazyPut<BaseControllerController>(() => BaseControllerController());
-    HomeBinding().dependencies();
   }
 }

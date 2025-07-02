@@ -6,7 +6,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import '../../../../utils/widgets/CustomClipper.dart';
 import '../../../../utils/widgets/product_items.dart';
-import '../../../models/Product.dart';
+import '../../../models/product.dart';
 import '../controllers/home_controller.dart';
 
 class HomeView extends GetView<HomeController> {
@@ -22,11 +22,13 @@ class HomeView extends GetView<HomeController> {
 
     final products = List.generate(
       10,
-      (index) => const Product(
+      (index) => Product(
         name: 'iPhone 11 64GB',
         brand: 'Apple',
         discountPercent: 49,
         imagePath: 'assets/products/product_4_1.png',
+        oldPrice: 299,
+        price: 199,
       ),
     );
 
@@ -245,15 +247,10 @@ class HomeView extends GetView<HomeController> {
               physics: NeverScrollableScrollPhysics(),
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
-                childAspectRatio: 0.85,
+                childAspectRatio: 0.75,
               ),
               itemBuilder: (context, index) {
-                return ProductItem(
-                  products[index].imagePath,
-                  products[index].discountPercent.toString(), // fix type
-                  products[index].name,
-                  products[index].brand,
-                );
+                return ProductItem(products[index]);
               },
             ),
           ],
