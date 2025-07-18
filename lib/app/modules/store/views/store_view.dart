@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import '../../../../utils/UColors.dart';
 import '../../../../utils/widgets/Circle.dart';
 import '../../../../utils/widgets/CustomClipper.dart';
+import '../../../../utils/widgets/brand_tabbar.dart';
 import '../../../../utils/widgets/category_item.dart';
 import '../../../../utils/widgets/product_items.dart';
 import '../../../models/brand.dart';
@@ -187,9 +188,16 @@ class StoreView extends GetView<StoreController> {
                     isScrollable: true,
                     controller: controller.tabController,
                     onTap: controller.changeTab,
-                    labelPadding: EdgeInsets.only(left: 1, right: 16),
+                    labelPadding: EdgeInsets.only(
+                      left: 0,
+                      right: 0,
+                      top: 0,
+                      bottom: 0,
+                    ),
                     tabs:
-                        controller.categories.map((e) => Tab(text: e)).toList(),
+                        controller.categories
+                            .map((e) => Tab(child: BrandTabBar(e)))
+                            .toList(),
                   ),
                 ),
               ),

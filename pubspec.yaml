@@ -44,10 +44,11 @@ dependencies:
   intl: ^0.20.2
   flutter_screenutil: ^5.9.3
   curved_navigation_bar: ^1.0.6
-
+  fluttertoast: ^8.2.10
   # State-Management
   get: ^4.6.6
   get_storage: ^2.1.1
+  flutter_form_builder: ^10.0.1
 
 
 
@@ -103,3 +104,5 @@ flutter:
           weight: 600
         - asset: assets/fonts/Nunito-Bold.ttf
           weight: 800
+flutter_intl:
+  enabled: true

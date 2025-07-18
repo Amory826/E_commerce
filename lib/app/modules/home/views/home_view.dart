@@ -10,6 +10,8 @@ import '../../../models/product.dart';
 import '../controllers/home_controller.dart';
 
 class HomeView extends GetView<HomeController> {
+  const HomeView({super.key});
+
   @override
   Widget build(BuildContext context) {
     final categories = [
@@ -29,6 +31,7 @@ class HomeView extends GetView<HomeController> {
         imagePath: 'assets/products/product_4_1.png',
         oldPrice: 299,
         price: 199,
+        stock: true,
       ),
     );
 

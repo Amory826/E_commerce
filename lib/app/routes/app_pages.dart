@@ -1,3 +1,5 @@
+import 'package:e_commerce/app/modules/product_detail/bindings/product_detail_binding.dart';
+import 'package:e_commerce/app/modules/product_detail/views/product_detail_views.dart';
 import 'package:e_commerce/app/modules/profile/views/profile_view.dart';
 import 'package:e_commerce/app/modules/store/controllers/store_controller.dart';
 import 'package:e_commerce/app/modules/store/views/store_view.dart';
@@ -40,6 +42,11 @@ class AppPages {
       name: _Paths.WISHLIST,
       page: () => WishlistView(),
       binding: WishlistBindings(),
+    ),
+    GetPage(
+      name: _Paths.PRODUCT_DETAIL,
+      page: () => ProductDetailView(),
+      binding: ProductDetailBinding(),
     ),
   ];
 }

@@ -2,10 +2,14 @@ import 'package:e_commerce/app/models/product.dart';
 import 'package:e_commerce/utils/UColors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 
 Widget ProductItem(Product product) {
   return InkWell(
-    onTap: () {},
+    onTap: () {
+      debugPrint("Product: ${product}");
+      Get.toNamed('/product_detail', arguments: {'product': product});
+    },
     borderRadius: BorderRadius.circular(12),
     child: Container(
       width: 160.w,
@@ -60,12 +64,15 @@ Widget ProductItem(Product product) {
                 ),
               ),
               Positioned(
-                top: 16,
-                right: 16,
-                child: Icon(
-                  Icons.favorite_border,
-                  size: 20.sp,
-                  color: Colors.grey,
+                top: 4,
+                right: 4,
+                child: IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.favorite_border,
+                    size: 24.sp,
+                    color: Colors.grey,
+                  ),
                 ),
               ),
             ],
